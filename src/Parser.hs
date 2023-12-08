@@ -7,12 +7,10 @@ module Parser
 , wordP
 , intP
 , linesP
-, some
-, sepBy1
 ) where
 
 import Data.Void ( Void )
-import Text.Megaparsec ( Parsec, runParser, some, sepBy1, MonadParsec (takeWhile1P), sepEndBy1, errorBundlePretty )
+import Text.Megaparsec ( Parsec, runParser, MonadParsec (takeWhile1P), sepEndBy1 )
 import Text.Megaparsec.Char ( hspace1, eol )
 import Text.Megaparsec.Error ( ParseErrorBundle )
 import qualified Text.Megaparsec.Char.Lexer as L

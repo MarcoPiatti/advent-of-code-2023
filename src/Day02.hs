@@ -1,10 +1,12 @@
 module Day02 ( day02 ) where
 
 import Parser
+import Text.Megaparsec ( sepBy1 )
 import Data.Function ( on )
 import Data.List ( foldl' )
 import Control.Applicative ( Applicative(liftA2) )
 import Utils ( printResults )
+
 data Cube = Cube 
   { quantity :: Int
   , color :: String

@@ -1,4 +1,6 @@
-module Utils ( printResults ) where
+module Utils 
+( printResults
+) where
 
 import Parser ( ParseResult )
 import Text.Megaparsec.Error ( errorBundlePretty )
