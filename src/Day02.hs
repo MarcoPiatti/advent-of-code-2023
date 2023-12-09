@@ -36,7 +36,7 @@ possibleIDs :: Set -> [Game] -> [Int]
 possibleIDs bag = map gameId . filter (isPossible bag)
 
 part1 :: [Game] -> String
-part1 = show . sum . possibleIDs [Cube 12 "red", Cube 13 "green", Cube 14 "blue"]
+part1 = show . sum . possibleIDs elfBag 
 {-- Part 1 --}
 
 {-- Part 2 --}
